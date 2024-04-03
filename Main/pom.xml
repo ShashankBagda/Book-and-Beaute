@@ -2,10 +2,10 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.example</groupId>
-  <artifactId>Book_and_Beaute</artifactId>
+  <artifactId>Main</artifactId>
   <packaging>war</packaging>
   <version>1.0-SNAPSHOT</version>
-  <name>Book_and_Beaute Maven Webapp</name>
+  <name>Main Maven Webapp</name>
   <url>http://maven.apache.org</url>
   <dependencies>
 
@@ -16,32 +16,30 @@
       <scope>test</scope>
     </dependency>
 
+    <!--Java Servlet-->
     <dependency>
       <groupId>javax.servlet</groupId>
       <artifactId>javax.servlet-api</artifactId>
       <version>4.0.1</version>
     </dependency>
 
-    <dependency>
-      <groupId>org.example</groupId>
-      <artifactId>Book_and_Beaute</artifactId>
-      <version>1.0-SNAPSHOT</version>
-    </dependency>
-
+    <!-- Hibernate -->
     <dependency>
       <groupId>org.hibernate</groupId>
       <artifactId>hibernate-core</artifactId>
-      <version>5.4.32.Final</version>
+      <version>5.5.7.Final</version>
     </dependency>
 
+    <!-- MySQL Connector -->
     <dependency>
       <groupId>mysql</groupId>
       <artifactId>mysql-connector-java</artifactId>
-      <version>5.1.5</version>
+      <version>8.0.26</version>
     </dependency>
+
 
   </dependencies>
   <build>
-    <finalName>Book_and_Beaute</finalName>
+    <finalName>Main</finalName>
   </build>
 </project>

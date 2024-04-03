@@ -9,22 +9,23 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
     <style>
-        /* Add your custom CSS styles here */
         body {
             font-family: 'Arial', sans-serif;
+            scroll-behavior: smooth;
         }
-        /* Add background color to card */
+        *{scroll-behaviour : smooth;}
         .card {
-            background-color: #e0dcdc; /* Adjust color as needed */
+            background-color: #ffd6d6; /* Adjust color as needed */
         }
         header {
             background-color: #fff;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             padding: 15px 0;
+            scroll-behavior: smooth;
         }
         .navbar-brand {
             font-weight: bold;
-            color: #333;
+            color: #ffd6d6;
             font-size: 24px;
         }
         .hero-section {
@@ -63,7 +64,7 @@
         }
         .features-section h3 {
             font-size: 24px;
-            background-color: #b9b1b1;
+            background-color: #ffd6d6;
             margin-bottom: 20px;
             text-align:center;
         }
@@ -82,7 +83,7 @@
         }
         .about-section {
             padding: 80px 0;
-            background-color: #a8a0a0;
+            background-color: #ffd6d6;
         }
         .about-section h2 {
             font-size: 36px;
@@ -165,7 +166,7 @@
 
 
 <!-- Hero Section -->
-<section class="hero-section" id="hero-section">
+<section class="hero-section" id="hero-section"><br><br>
     <div class="container">
         <div class="row">
             <div class="col-md-6">
@@ -175,19 +176,19 @@
             </div>
             <div class="col-md-6">
                 <br><br>
-                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="images/slide 1.png" class="d-block w-100" alt="Image 1">
+                            <img class="d-block w-100" src="images/slide1.png" alt="First slide">
                         </div>
-                        <div class="carousel-item active">
-                            <img src="images/slide 2.png" class="d-block w-100" alt="Image 2">
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="images/slide2.png" alt="Second slide">
                         </div>
-                        <div class="carousel-item active">
-                            <img src="images/slide 3.png" class="d-block w-100" alt="Image 3">
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="images/slide3.png" alt="Third slide">
                         </div>
-                        <div class="carousel-item active">
-                            <img src="images/slide 4.png" class="d-block w-100" alt="Image 4">
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="images/slide4.png" alt="Third slide">
                         </div>
                     </div>
                 </div>
@@ -214,29 +215,29 @@
         <h2>Key Features</h2>
         <div class="row">
             <div class="col-md-4">
-                <h3>Appointment Management</h3>
+                <h3 class="rounded">Appointment Management</h3>
                 <p>Simplify scheduling for both salon owners and clients. Features include individual and recurring appointments, online booking, automated appointment reminders, and waitlist management.</p>
             </div>
             <div class="col-md-4">
-                <h3>Client Management</h3>
+                <h3 class="rounded">Client Management</h3>
                 <p>Create detailed client profiles, record appointment history, track preferences, and manage communication seamlessly through integrated messaging or email. This fosters personalized interactions and builds strong client relationships.</p>
             </div>
             <div class="col-md-4">
-                <h3>Billing and Payment Processing</h3>
+                <h3 class="rounded">Billing and Payment Processing</h3>
                 <p>Generate accurate bills instantly, accept secure online payments through various gateways, and streamline accounting processes. This eliminates manual errors and improves cash flow.</p>
             </div>
         </div>
         <div class="row">
             <div class="col-md-4">
-                <h3>Reporting and Analytics</h3>
+                <h3 class="rounded">Reporting and Analytics</h3>
                 <p>Gain valuable insights into salon performance by analyzing data on appointment trends, service popularity, and revenue streams. These insights help optimize operations, identify growth opportunities, and make data-driven decisions.</p>
             </div>
             <div class="col-md-4">
-                <h3>Advance Technology</h3>
+                <h3 class="rounded">Advance Technology</h3>
                 <p>Modular Java MVC Architecture which enhances the security and adds seamless functionality along with Digital Payment Integration and Cloud-Based Deployment for Cross Platform Usability</p>
             </div>
             <div class="col-md-4">
-                <h3>Creativity</h3>
+                <h3 class="rounded">Creativity</h3>
                 <p>Unique Client and Admin Portal for seamless functionality along with Enhanced User Interface which increases the User Experience for Appointment and Scheduling</p>
             </div>
         </div>
@@ -367,7 +368,7 @@
 
 <!-- Contact Us Section -->
 <section class="contact-section" id="contact-section">
-    <div class="container">
+    <div class="container" style="background-color:#ffd6d6"><br>
         <h2>Contact Us</h2>
         <h4 class="text-center"><p>Contact for Inquiries or Demo Requests.</p></h4><br>
         <form>
@@ -386,7 +387,7 @@
                 <input type="text" class="form-control" id="inputAddress" placeholder="Write Here">
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
+        </form> <br>
     </div>
 </section>
 
@@ -411,6 +412,45 @@
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+<script>
+    $('a[href*="#"]')
+        // Remove links that don't actually link to anything
+        .not('[href="#"]')
+        .not('[href="#0"]')
+        .click(function(event) {
+            // On-page links
+            if (
+                location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+                &&
+                location.hostname == this.hostname
+            ) {
+                // Figure out element to scroll to
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                // Does a scroll target exist?
+                if (target.length) {
+                    // Only prevent default if animation is actually gonna happen
+                    event.preventDefault();
+                    $('html, body').animate({
+                        scrollTop: target.offset().top-100
+                    }, 1000, function() {
+                        // Callback after animation
+                        // Must change focus!
+                        var $target = $(target);
+                        $target.focus();
+                        if ($target.is(":focus")) { // Checking if the target was focused
+                            return false;
+                        } else {
+                            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+                            $target.focus(); // Set focus again
+                        };
+                    });
+                }
+            }
+        });
+</script>
+
 
 </body>
 </html>
