@@ -22,7 +22,7 @@
 							HOME</a></li>
 					<li class="nav-item"><a class="nav-link active"
 						aria-current="page" href="saloon.jsp"><i
-							class="fa-solid fa-scissors"></i> BARBER</a></li>
+							class="fa-solid fa-scissors"></i> ADD BARBER</a></li>
 					<li class="nav-item"><a class="nav-link active"
 						aria-current="page" href="view_saloon.jsp"><i
 							class="fa-solid fa-list"></i> VIEW BARBER</a></li>

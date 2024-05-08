@@ -40,7 +40,7 @@
 						<li class="nav-item"><a class="nav-link active"
 							aria-current="page" href="user_appointment.jsp"><i class="fa fa-book fa-1x"></i> APPOINTMENT</a></li>
 						<li class="nav-item"><a class="nav-link active"
-							aria-current="page" href="user_login.jsp"><i class="fas fa-sign-in-alt"></i> USER</a></li>
+							aria-current="page" href="user_login.jsp"><i class="fas fa-sign-in-alt"></i> CUSTOMER</a></li>
 	
 					</c:if>
 	

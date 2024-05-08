@@ -50,8 +50,8 @@
 							<th scope="col">Email</th>
 							<th scope="col">Phone</th>
 							<th scope="col" style="padding-right:70px">Barber Name</th>
-							<th scope="col">Address</th>
-							<th scope="col" style="padding-right:100px">Status</th>
+							<th scope="col">Services</th>
+							<th scope="col" style="padding-right:100px">Timing</th>
 
 						</tr>
 					</thead>

@@ -94,7 +94,7 @@
 
 
 						<!-- boostrap form -->
-						<form class="row g-3" action="addAppointment" method="post">
+						<form class="row g-3" action="addAppointment" method="post" onsubmit="return validateDate();">
 							
 							<!-- take user Id in hidden field -->
 							<input type="hidden" name="userId" value="${ userObj.id }">
@@ -198,25 +198,23 @@
 
 	</div>
 
-	<!-- 2nd Div -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <!-- footer -->
 <%@include file="component/footer.jsp" %>
 <!-- end footer -->
 
 </body>
+
+<script>
+	function validateDate() {
+		var today = new Date();
+		var appointmentDate = new Date(document.getElementsByName("appointmentDate")[0].value);
+
+		if (appointmentDate <= today) {
+			alert("Appointment date must be greater than or equal to today's date.");
+			return false;
+		}
+		return true;
+	}
+</script>
+
 </html>
